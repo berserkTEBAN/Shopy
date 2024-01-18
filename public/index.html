@@ -1,0 +1,47 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista De Compras</title>
+    <script src="vue3.js"></script>
+    <style>
+        h1{
+            color: rgb(0, 183, 255);
+        }
+        label{
+            color: rgb(0, 217, 255);
+        }
+    </style>
+</head>
+<body background="https://www.roc21.com/blog/wp-content/uploads/2012/09/fondos-para-pa%CC%81ginas-web-6.jpg">
+    <center><h1>Lista De Compras</h1></center>
+    <hr>
+    <div id="app">
+        <center><label for="nombrecliente">Nombre del Cliente:</label>
+        <br>
+        <input type="text" id="nombrecliente" v-model="nombrecliente"></center>
+        <br><br>
+        <center><label for="cantidaddescuento">Hasta Que Cantidad Quiere Se Aplique El Descuento:</label>
+        <br>
+        <input type="number" id="cantidaddescuento" v-model="cantidaddescuento"></center>
+        <br><br>
+        <center><label for="nombreproducto">Nombre del Producto:</label>
+        <br>
+        <input type="text" id="nombreproducto" v-model="nombreproducto"></center>
+        <br><br>
+        <center><label for="costoproducto">Costo Del Producto :</label>
+        <br>
+        <input type="number" id="costoproducto" v-model="costoproducto"></center>
+        <br><br>
+        <center><label for="cantidadqueadquiriste">Cantidad Que Adquiriste :</label>
+        <br>
+        <input type="number" id="cantidadqueadquiriste" v-model="cantidadqueadquiriste"></center>
+        <br><br>
+        <center><button type="button" v-on:click="mostrartotal()">Total </button></center>
+    </div>
+    <script src="appvue.js"></script>
+</body>
+</html>
